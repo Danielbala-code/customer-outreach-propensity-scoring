@@ -1,0 +1,20 @@
+{
+  "model": "Logistic regression with median imputation, scaling, and one-hot encoded country",
+  "target": "Positive sale by an eligible customer in the 28 days after the scoring date",
+  "lookback_days": 90,
+  "test_cutoff": "2011-09-20",
+  "train_rows": 54765,
+  "test_rows": 18076,
+  "test_base_conversion_rate": 0.3797300287674264,
+  "roc_auc": 0.6866985880096832,
+  "average_precision": 0.6211425914017474,
+  "brier_score": 0.21082312381841667,
+  "precision_at_top_10_percent": 0.8136061946902655,
+  "top_10_percent_leads": 1808,
+  "lift_at_top_10_percent": 2.142591138581183,
+  "leakage_exclusions": [
+    "Invoice activity after snapshot date",
+    "Outcome-period purchase events",
+    "Post-outcome delivery or return information"
+  ]
+}
